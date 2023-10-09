@@ -1,7 +1,7 @@
 my_string = 'sebastian thrum'
-my_string.islower()
-my_string.count('a')
-my_string.find('a')
+print(my_string.islower())
+print(my_string.count('a'))
+print(my_string.find('a'))
 
 print('Mohamed has {} ballons'.format(27))
 
