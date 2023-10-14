@@ -26,3 +26,13 @@ eclipse_dates = ['June 21, 2001', 'December 4, 2002', 'November 23, 2003',
 # TODO: Modify this line so it prints the last three elements of the list
 eclipse_dates = eclipse_dates[7:]
 print(eclipse_dates)
+
+new_str ='\n'.join(['fore', 'aft', 'starboard', 'port'])
+print(new_str)
+
+name = '-'.join(['Garcia', "O'.Kelly"])
+print(name)
+
+letters = ['a', 'b', 'c', 'd']
+letters.append('z')
+print(letters)
