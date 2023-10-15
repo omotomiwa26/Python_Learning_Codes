@@ -41,3 +41,9 @@ elements = {
     'helium': {'number': 2, 'weight': 4.002602, 'symbol': 'He'}
 }
 
+# todo: Add an 'is_noble_gas' entry to the hydrogen and helium dictionaries
+# hint: helium is a noble gas, hydrogen isn't
+hydrogen = elements['hydrogen']['is_noble_gas'] = False
+helium = elements['helium']['is_noble_gas'] = True
+print('elements = ', elements)
+
