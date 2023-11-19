@@ -8,7 +8,7 @@ for list in lists:
 for num in range(5, 31, 5):
     print(num)
 
-#-------------name range-----------#
+#-------------create usernames-----------#
 names = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
 usernames = []
 
@@ -17,3 +17,18 @@ for index in range(len(names)):
     names[index] = names[index].lower()
     usernames.append(names[index].replace(" ", "_"))
 print(usernames)
+
+usernames = ["Joey Tribbiani", "Monica Geller", "Chandler Bing", "Phoebe Buffay"]
+for index in range(len(usernames)):
+    usernames[index] = usernames[index].lower().replace(" ", "_")
+print(usernames)
+
+#------------Tag Counter----------#
+tokens = ['<greeting>', 'Hello World!', '</greeting>']
+count = 0
+for token in tokens:
+    if token[0] == '<' and token[-1] == '>':
+        count +=1
+print(count)
+
+#---------------
