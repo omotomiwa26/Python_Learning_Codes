@@ -38,3 +38,23 @@ else:
     ticket_price = adult_ticket
 print("Somebody who is {} years old will pay ${} to ride the bus".format(age, ticket_price))
 
+#-------------points and prize--------------#
+points = 100  # use this input to make your submission
+
+prize1 = "wooden rabbit"
+prize3 = "wafer-thin mint"
+prize4 = "penguin"
+
+# write your if statement here
+if (points >=1 and points <=50):
+    result = F"Congratulations! You won a {prize1}!"
+elif (points >=51 and points <=150):
+    result = "Oh dear, no prize this time."
+elif (points >=15 and points <=180):
+    result = F"Congratulations! You won a {prize3}!"
+elif (points >=181 and points <=120):
+    result = F"Congratulations! You won a {prize4}!"
+else:
+    result = "Points not valid"
+
+print(result)
