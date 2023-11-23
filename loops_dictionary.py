@@ -8,3 +8,14 @@ for word in book_title:
     else:
         book_dict[word] += 1
 print(book_dict)
+
+
+#---------------------------------#
+cast = {
+           "Jerry Seinfeld": "Jerry Seinfeld",
+           "Julia Louis-Dreyfus": "Elaine Benes",
+           "Jason Alexander": "George Costanza",
+           "Michael Richards": "Cosmo Kramer"
+       }
+for keys, values in cast.items():
+    print(F"Actor{keys}    Role{values}")
