@@ -35,3 +35,18 @@ while (n+1)**2 < limit:
     n+=1
     nearest_square = n**2
     print(nearest_square)
+#------------while odd count---------------#
+num_list = [422, 136, 524, 85, 96, 719, 85, 92, 10, 17, 312, 542, 87, 23, 86, 191, 116, 35, 173, 45, 149, 59, 84, 69, 113, 166]
+
+count_odd = 0
+list_sum = 0
+ind = 0
+
+while (count_odd < 5) and (ind < len(num_list)): 
+    if num_list[ind] % 2 != 0:
+        list_sum += num_list[ind]
+        count_odd += 1
+    ind += 1
+
+print ("The numbers of odd numbers added are: {}".format(count_odd))
+print ("The sum of the odd numbers added is: {}".format(list_sum))
