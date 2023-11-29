@@ -19,3 +19,12 @@ cast_heights = [72, 68, 72, 66, 76]
 for cn, ch in zip(cast_names, cast_heights):
     cast = dict(zip(cast_names, cast_heights))
 print(cast)
+
+#----------------Unzip Tuples--------#
+cast = (("Barney", 72), ("Robin", 68), ("Ted", 72), ("Lily", 66), ("Marshall", 76))
+
+# define names and heights here
+names, heights = zip(*cast)
+
+print(names)
+print(heights)
