@@ -34,3 +34,14 @@ data = ((0, 1, 2), (3, 4, 5), (6, 7, 8), (9, 10, 11))
 
 data_transpose = tuple(zip(*data))
 print(data_transpose)
+
+#-------------Enumerate--------------------------#
+cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Marshall Eriksen"]
+heights = [72, 68, 72, 66, 76]
+
+# write your for loop here
+cast = ["Barney Stinson", "Robin Scherbatsky", "Ted Mosby", "Lily Aldrin", "Marshall Eriksen"]
+for i, char in enumerate(cast):
+    cast[i] = char + " " +  str(heights[i])
+
+print(cast)
