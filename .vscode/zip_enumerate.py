@@ -12,4 +12,10 @@ for point in zip(labels, x_coord, y_coord, z_coord):
 for point in points:
     print(point)
 
-    #----------------
+#----------------zip dcitionary------------------#
+cast_names = ["Barney", "Robin", "Ted", "Lily", "Marshall"]
+cast_heights = [72, 68, 72, 66, 76]
+
+for cn, ch in zip(cast_names, cast_heights):
+    cast = dict(zip(cast_names, cast_heights))
+print(cast)
