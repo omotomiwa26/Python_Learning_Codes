@@ -14,3 +14,16 @@ print(averages)
 
 averages2 = list(map(lambda num: sum(num) / len(num), numbers))
 print (averages2)
+
+
+#------------lambda with filter---------------#
+cities = ["New York City", "Los Angeles", "Chicago", "Mountain View", "Denver", "Boston"]
+
+def is_short(name):
+    return len(name) < 10
+
+short_cities = list(filter(is_short, cities))
+print(short_cities)
+
+short_cities2 = list(filter(lambda city: len(city) < 10, cities))
+print(short_cities2)
